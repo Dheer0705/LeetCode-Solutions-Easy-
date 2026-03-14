@@ -1,0 +1,11 @@
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        best_val = 0
+        min_val = float('inf')
+        for price in prices:
+            if price < min_val:
+                min_val = price
+            current_profit = price - min_val
+            if current_profit > best_val:
+                best_val = current_profit
+        return best_val
