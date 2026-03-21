@@ -1,0 +1,5 @@
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        N = format(n,'032b')
+        N_1 = N[::-1]
+        return int(N_1,2)
