@@ -1,0 +1,13 @@
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        res = 0
+        def maxNode(node, Depth):
+            nonlocal res
+            if not node:
+                return 
+            if Depth > res:
+                res = Depth
+            maxNode(node.left, Depth+1)
+            maxNode(node.right, Depth+1)
+        maxNode(root,1)
+        return res
