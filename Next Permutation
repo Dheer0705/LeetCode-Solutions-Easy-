@@ -1,0 +1,29 @@
+class Solution:
+    def nextPermutation(self, nums: List[int]) -> None:
+        n = len(nums)
+        
+        # 1. Find the first element from the right that is smaller than the next one
+        pivot_idx = -1
+        for i in range(n - 2, -1, -1):
+            if nums[i] < nums[i + 1]:
+                pivot_idx = i
+                break
+        
+        if pivot_idx == -1:
+            nums.reverse()
+            return
+        
+        # 2. Find the smallest element in the suffix that is > nums[pivot_idx]
+        successor_idx = -1
+        for j in range(n - 1, pivot_idx, -1):
+            if nums[j] > nums[pivot_idx]:
+                successor_idx = j
+                break
+        
+        # 3. Swap the pivot and successor
+        nums[pivot_idx], nums[successor_idx] = nums[successor_idx], nums[pivot_idx]
+        
+        # 4. Sort the suffix (everything after pivot_idx)
+        # Python's Timsort is O(k log k) where k is the suffix length.
+        # Since the suffix was almost sorted, this is very fast.
+        nums[pivot_idx + 1:] = sorted(nums[pivot_idx + 1:])
