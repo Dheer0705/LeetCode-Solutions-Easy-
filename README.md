@@ -1,48 +1,94 @@
-Since you're building a repository for your **LeetCode** progress—especially as you move from "Easy" to "Medium" challenges like the one we just looked at—your README should reflect your technical growth and consistency.
+# 🚀 LeetCode Solutions (Easy & Medium)
 
-Here is a clean, professional README layout you can copy and paste:
+Welcome to my collection of **LeetCode problem solutions**! This repository documents my journey mastering **Data Structures and Algorithms (DSA)** using **Python**, with a focus on writing efficient, clean, and well-documented code.
+
+As a **BE AIML student**, I'm building a strong foundation in algorithmic thinking while exploring intersections with Machine Learning and Data Visualization.
 
 ---
 
-# 🚀 LeetCode Solutions (Easy & Medium)
+## 📊 Progress Overview
 
-Welcome to my collection of LeetCode problem solutions! This repository serves as a record of my journey in mastering **Data Structures and Algorithms (DSA)** using **Python**. 
+| Metric | Details |
+| :--- | :--- |
+| **Language** | Python 🐍 |
+| **Total Problems** | 60+ Easy, In Progress Medium |
+| **Target** | 100+ problems by Q3 2026 |
+| **Key Focus** | DSA fundamentals → MLOps applications |
 
-As a BE AIML student, I focus on writing efficient, clean, and well-documented code while optimizing for both time and space complexity.
+---
 
-## 📊 Progress Snapshot
+## 🎯 Solved Problems Breakdown
 
-* **Language:** Python 🐍
-* **Target:** Master 100+ problems before mid-2026.
-* **Focus Areas:** Arrays, Strings, Hash Maps, Linked Lists, and Machine Learning-related algorithms.
-
-## 🏆 Current Stats
-| Difficulty | Solved | Key Concepts Covered |
+| Difficulty | Count | Key Topics |
 | :--- | :--- | :--- |
-| **Easy** | 60+ | Two Pointers, Sliding Window, Basic Math |
-| **Medium** | In Progress | Permutations, Binary Search, Dynamic Programming |
-| **Hard** | Coming Soon | Graphs, Advanced DP |
+| **Easy** | 60+ | Two Pointers, Sliding Window, Hash Maps, Basic Math |
+| **Medium** | In Progress | Binary Search, Permutations, Dynamic Programming, Backtracking |
+| **Hard** | Coming Soon | Graphs, Advanced DP, Tree Algorithms |
 
-## 📂 Project Structure
+---
 
-Each solution is organized by its difficulty or problem type:
-```text
-.
+## 📂 Repository Structure
+
+```
+LeetCode-Solutions-Easy-/
 ├── Easy/
 │   ├── TwoSum.py
 │   ├── ReverseInteger.py
-│   └── ...
+│   ├── PalindromeNumber.py
+│   └── ... (60+ solutions)
 ├── Medium/
 │   ├── NextPermutation.py
-│   └── ...
+│   ├── SearchInRotatedArray.py
+│   └── ... (growing collection)
 └── README.md
 ```
 
-## 🛠️ Highlights
-HackerRank : Golden Badge in Python.
-Currently Focusing on Ml ops, Data Visualization 
-
-## 🤝 Connect with Me
-If you have suggestions for better optimizations or want to discuss a specific logic, feel free to open an issue or reach out!
+Each solution includes:
+- ✅ **Clean, readable code** with meaningful variable names
+- 📝 **Detailed comments** explaining the approach
+- ⏱️ **Time & Space Complexity** analysis
+- 🎓 **Multiple approaches** when applicable (brute force → optimized)
 
 ---
+
+## 🏅 Achievements & Certifications
+
+- 🥇 **HackerRank:** Python Golden Badge
+- 🎯 **Current Focus:** MLOps, Data Visualization, Algorithm optimization
+
+---
+
+## 📚 Learning Resources Used
+
+- LeetCode Official Platform
+- Data Structures & Algorithms Fundamentals
+- Python Best Practices & Clean Code
+
+---
+
+## 💡 How to Use This Repository
+
+1. **Browse by difficulty** → Navigate to Easy/ or Medium/ folders
+2. **Study the approach** → Read comments and complexity analysis
+3. **Test locally** → Run Python files with sample test cases
+4. **Compare solutions** → See multiple approaches for the same problem
+
+---
+
+## 🤝 Contributing & Feedback
+
+Found a better optimization? Have suggestions for improvements?
+
+- 📮 **Open an Issue** with your suggestions
+- 💬 **Discuss** alternative approaches or edge cases
+- 🔗 **Connect** for DSA/MLOps discussions
+
+---
+
+## 📝 Notes
+
+This repository serves as both a **learning portfolio** and a **reference guide** for future algorithm interviews and DSA applications in machine learning contexts.
+
+---
+
+**Last Updated:** April 2026 | **Language:** Python 3.x
