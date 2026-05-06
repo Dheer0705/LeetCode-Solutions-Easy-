@@ -1,0 +1,12 @@
+class Solution:
+    @lru_cache(None)
+    def generateMatrix(self, n: int) -> List[List[int]]:
+        
+        res = []
+        num = n * n 
+        
+        while n > 0:
+            res = [list(range(num - len(res), num))] + list(zip(*res))[::-1]
+            num -= len(res)
+
+        return res
