@@ -6,14 +6,25 @@ As a **BE AIML student**, I'm building a strong foundation in algorithmic thinki
 
 ---
 
+## 🏆 LeetCode Achievements
+
+| Badge | Details |
+| :--- | :--- |
+| **50-Day Streak** 🔥 | Consistent daily problem-solving |
+| **Rank** | Under 16 Lakh 🎯 |
+| **Consistency** | Active contributor to DSA mastery |
+
+---
+
 ## 📊 Progress Overview
 
 | Metric | Details |
 | :--- | :--- |
 | **Language** | Python 🐍 |
-| **Total Problems** | 60+ Easy, In Progress Medium |
-| **Target** | 100+ problems by Q3 2026 |
+| **Total Problems** | 70+ Easy, 15+ Medium |
+| **Target** | 150+ problems by Q4 2026 |
 | **Key Focus** | DSA fundamentals → MLOps applications |
+| **Current Streak** | 50 days consecutive ✨ |
 
 ---
 
@@ -21,8 +32,8 @@ As a **BE AIML student**, I'm building a strong foundation in algorithmic thinki
 
 | Difficulty | Count | Key Topics |
 | :--- | :--- | :--- |
-| **Easy** | 60+ | Two Pointers, Sliding Window, Hash Maps, Basic Math |
-| **Medium** | In Progress | Binary Search, Permutations, Dynamic Programming, Backtracking |
+| **Easy** | 70+ | Two Pointers, Sliding Window, Hash Maps, Basic Math, Strings |
+| **Medium** | 15+ | Binary Search, Permutations, Dynamic Programming, Backtracking |
 | **Hard** | Coming Soon | Graphs, Advanced DP, Tree Algorithms |
 
 ---
@@ -35,11 +46,11 @@ LeetCode-Solutions-Easy-/
 │   ├── TwoSum.py
 │   ├── ReverseInteger.py
 │   ├── PalindromeNumber.py
-│   └── ... (60+ solutions)
+│   └── ... (70+ solutions)
 ├── Medium/
 │   ├── NextPermutation.py
 │   ├── SearchInRotatedArray.py
-│   └── ... (growing collection)
+│   └── ... (15+ solutions)
 └── README.md
 ```
 
@@ -54,7 +65,9 @@ Each solution includes:
 ## 🏅 Achievements & Certifications
 
 - 🥇 **HackerRank:** Python Golden Badge
-- 🎯 **Current Focus:** MLOps, Data Visualization, Algorithm optimization
+- 🔥 **LeetCode:** 50-Day Streak Badge
+- 🎯 **LeetCode Rank:** Under 16 Lakh
+- 📈 **Current Focus:** MLOps, Data Visualization, Algorithm optimization
 
 ---
 
@@ -63,6 +76,7 @@ Each solution includes:
 - LeetCode Official Platform
 - Data Structures & Algorithms Fundamentals
 - Python Best Practices & Clean Code
+- Algorithm Design Manual & Interview Prep Materials
 
 ---
 
@@ -72,6 +86,7 @@ Each solution includes:
 2. **Study the approach** → Read comments and complexity analysis
 3. **Test locally** → Run Python files with sample test cases
 4. **Compare solutions** → See multiple approaches for the same problem
+5. **Track progress** → Follow my journey and get inspired!
 
 ---
 
@@ -85,10 +100,19 @@ Found a better optimization? Have suggestions for improvements?
 
 ---
 
-## 📝 Notes
+## 📈 Recent Milestones
 
-This repository serves as both a **learning portfolio** and a **reference guide** for future algorithm interviews and DSA applications in machine learning contexts.
+- ✅ Crossed 70+ Easy problems
+- ✅ Achieved 50-Day Streak on LeetCode
+- ✅ Rank improved to Under 16 Lakh
+- 🚀 Working towards consistent Medium problem solving
 
 ---
 
-**Last Updated:** April 2026 | **Language:** Python 3.x
+## 📝 Notes
+
+This repository serves as both a **learning portfolio** and a **reference guide** for future algorithm interviews and DSA applications in machine learning contexts. Each problem solved strengthens my foundation for building intelligent systems.
+
+---
+
+**Last Updated:** May 2026 | **Language:** Python 3.x | **Status:** 🟢 Active & Growing
