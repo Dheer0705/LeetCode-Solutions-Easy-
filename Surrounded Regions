@@ -1,0 +1,39 @@
+class Solution:
+    def solve(self, board: List[List[str]]) -> None:
+        rows, cols = len(board), len(board[0])
+        visited = set()
+
+        def dfs(r, c, region):
+            if (
+                r < 0 or r >= rows or
+                c < 0 or c >= cols or
+                board[r][c] != 'O' or
+                (r, c) in visited
+            ):
+                return False
+
+            visited.add((r, c))
+            region.append((r, c))
+
+            touches_border = (
+                r == 0 or r == rows - 1 or
+                c == 0 or c == cols - 1
+            )
+
+            touches_border |= dfs(r + 1, c, region)
+            touches_border |= dfs(r - 1, c, region)
+            touches_border |= dfs(r, c + 1, region)
+            touches_border |= dfs(r, c - 1, region)
+
+            return touches_border
+
+        for r in range(rows):
+            for c in range(cols):
+                if board[r][c] == 'O' and (r, c) not in visited:
+
+                    region = []
+                    border = dfs(r, c, region)
+
+                    if not border:
+                        for x, y in region:
+                            board[x][y] = 'X'
