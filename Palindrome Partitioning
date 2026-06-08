@@ -1,0 +1,15 @@
+class Solution:
+    def partition(self, s: str) -> List[List[str]]:
+        list1 = []
+        def backtrack(start,curr):
+            if start == len(s):
+                list1.append(list(curr))
+                return
+            for end in range(start + 1, len(s) + 1):
+                substring = s[start:end]
+                if substring == substring[::-1]:
+                    curr.append(substring)
+                    backtrack(end, curr)
+                    curr.pop()
+        backtrack(0,[])
+        return list1
