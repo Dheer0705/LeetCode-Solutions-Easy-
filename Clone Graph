@@ -1,0 +1,29 @@
+from typing import Optional
+class Solution:
+    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+        if not node:
+            return None
+
+    # Map to hold original nodes as keys and their clones as values
+        mp = {}
+
+    # Initialize BFS queue
+        q = deque([node])
+
+    # Clone the starting node
+        mp[node] = Node(node.val)
+
+        while q:
+            current = q.popleft()
+
+            for neighbor in current.neighbors:
+            
+            # If neighbor not cloned yet
+                if neighbor not in mp:
+                    mp[neighbor] = Node(neighbor.val)
+                    q.append(neighbor)
+
+            # Link clone of neighbor to the clone of the current node
+                mp[current].neighbors.append(mp[neighbor])
+
+        return mp[node]
