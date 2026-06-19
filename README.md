@@ -1,6 +1,6 @@
-# 🚀 LeetCode Solutions (Easy & Medium)
+# 🚀 LeetCode Solutions (Easy, Medium & Hard)
 
-Welcome to my collection of **LeetCode problem solutions**! This repository documents my journey mastering **Data Structures and Algorithms (DSA)** using **Python**, with a focus on writing efficient, clean, and well-documented code.
+Welcome to my collection of **LeetCode problem solutions**! This repository documents my journey mastering **Data Structures and Algorithms (DSA)** using **Python**, with a focus on writing efficient and optimized code.
 
 As a **BE AIML student**, I'm building a strong foundation in algorithmic thinking while exploring intersections with Machine Learning and Data Visualization.
 
@@ -12,6 +12,7 @@ As a **BE AIML student**, I'm building a strong foundation in algorithmic thinki
 | :--- | :--- |
 | **50-Day Streak** 🔥 | Consistent daily problem-solving |
 | **Rank** | Under 16 Lakh 🎯 |
+| **Total Problems Solved** | 120+ ⭐ |
 | **Consistency** | Active contributor to DSA mastery |
 
 ---
@@ -21,10 +22,13 @@ As a **BE AIML student**, I'm building a strong foundation in algorithmic thinki
 | Metric | Details |
 | :--- | :--- |
 | **Language** | Python 🐍 |
-| **Total Problems** | 70+ Easy, 15+ Medium |
-| **Target** | 150+ problems by Q4 2026 |
+| **Total Problems** | 120+ (Easy, Medium & Hard) |
+| **Easy Problems** | 70+ |
+| **Medium Problems** | 30+ |
+| **Hard Problems** | 20+ ✨ NEW |
+| **Target** | 200+ problems by Q4 2026 |
 | **Key Focus** | DSA fundamentals → MLOps applications |
-| **Current Streak** | 50 days consecutive ✨ |
+| **Current Streak** | 50+ days consecutive ✨ |
 
 ---
 
@@ -33,8 +37,8 @@ As a **BE AIML student**, I'm building a strong foundation in algorithmic thinki
 | Difficulty | Count | Key Topics |
 | :--- | :--- | :--- |
 | **Easy** | 70+ | Two Pointers, Sliding Window, Hash Maps, Basic Math, Strings |
-| **Medium** | 15+ | Binary Search, Permutations, Dynamic Programming, Backtracking |
-| **Hard** | Coming Soon | Graphs, Advanced DP, Tree Algorithms |
+| **Medium** | 30+ | Binary Search, Permutations, Dynamic Programming, Backtracking |
+| **Hard** | 20+ | Graphs, Advanced DP, Tree Algorithms, System Design Concepts |
 
 ---
 
@@ -50,7 +54,11 @@ LeetCode-Solutions-Easy-/
 ├── Medium/
 │   ├── NextPermutation.py
 │   ├── SearchInRotatedArray.py
-│   └── ... (15+ solutions)
+│   └── ... (30+ solutions)
+├── Hard/
+│   ├── MedianOfTwoSortedArrays.py
+│   ├── LongestSubstringWithoutRepeatingCharacters.py
+│   └── ... (20+ solutions)
 └── README.md
 ```
 
@@ -67,7 +75,8 @@ Each solution includes:
 - 🥇 **HackerRank:** Python Golden Badge
 - 🔥 **LeetCode:** 50-Day Streak Badge
 - 🎯 **LeetCode Rank:** Under 16 Lakh
-- 📈 **Current Focus:** MLOps, Data Visualization, Algorithm optimization
+- 💯 **120+ Problems Solved** across all difficulty levels
+- 📈 **Current Focus:** MLOps, Data Visualization, Hard Problem mastery, Algorithm optimization
 
 ---
 
@@ -77,12 +86,13 @@ Each solution includes:
 - Data Structures & Algorithms Fundamentals
 - Python Best Practices & Clean Code
 - Algorithm Design Manual & Interview Prep Materials
+- Competitive Programming & Advanced DSA Concepts
 
 ---
 
 ## 💡 How to Use This Repository
 
-1. **Browse by difficulty** → Navigate to Easy/ or Medium/ folders
+1. **Browse by difficulty** → Navigate to Easy/, Medium/, or Hard/ folders
 2. **Study the approach** → Read comments and complexity analysis
 3. **Test locally** → Run Python files with sample test cases
 4. **Compare solutions** → See multiple approaches for the same problem
@@ -102,17 +112,19 @@ Found a better optimization? Have suggestions for improvements?
 
 ## 📈 Recent Milestones
 
-- ✅ Crossed 70+ Easy problems
+- ✅ Crossed 120+ Total Problems Solved 🎉
+- ✅ Started solving Hard level problems 🚀
 - ✅ Achieved 50-Day Streak on LeetCode
 - ✅ Rank improved to Under 16 Lakh
-- 🚀 Working towards consistent Medium problem solving
+- ✅ Consistent Medium & Hard problem solving
+- 🚀 Working towards 200+ problems by Q4 2026
 
 ---
 
 ## 📝 Notes
 
-This repository serves as both a **learning portfolio** and a **reference guide** for future algorithm interviews and DSA applications in machine learning contexts. Each problem solved strengthens my foundation for building intelligent systems.
+This repository serves as both a **learning portfolio** and a **reference guide** for future algorithm interviews and DSA applications in machine learning contexts. Each problem solved strengthens my understanding of fundamental algorithms and helps me approach complex real-world problems with a structured mindset.
 
 ---
 
-**Last Updated:** May 2026 | **Language:** Python 3.x | **Status:** 🟢 Active & Growing
+**Last Updated:** June 2026 | **Language:** Python 3.x | **Status:** 🟢 Active & Growing
