@@ -1,0 +1,10 @@
+class Solution:
+    def getPermutation(self, n: int, k: int) -> str:
+        nums = list(range(1,n+1))
+        res = []
+        for _ in range(len(nums)):
+            perms = permutations(nums)
+            res.extend(perms)
+        res1 = res[k-1]
+        result = "".join(str(num) for num in res1)
+        return result
