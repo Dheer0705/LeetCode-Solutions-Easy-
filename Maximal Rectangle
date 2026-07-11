@@ -1,0 +1,26 @@
+def maximalRectangle(matrix: list[list[str]]) -> int:
+    if not matrix or not matrix[0]:
+        return 0
+    
+    cols = len(matrix[0])
+    # heights tracks the consecutive 1s forming a histogram up to the current row
+    heights = [0] * (cols + 1)  # Extra 0 acts as a sentinel to flush the stack at the end
+    max_area = 0
+    
+    for row in matrix:
+        # Update histogram heights for the current row
+        for c in range(cols):
+            heights[c] = heights[c] + 1 if row[c] == "1" else 0
+            
+        # Monotonic Increasing Stack to calculate Largest Rectangle in Histogram
+        stack = []
+        for i, h in enumerate(heights):
+            # Maintain increasing order; pop when the current height is smaller
+            while stack and heights[stack[-1]] > h:
+                height = heights[stack.pop()]
+                # If stack is empty, the popped height spans all the way to index 0
+                width = i if not stack else i - stack[-1] - 1
+                max_area = max(max_area, height * width)
+            stack.append(i)
+            
+    return max_area
