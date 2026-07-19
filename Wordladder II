@@ -1,0 +1,75 @@
+from collections import defaultdict, deque
+from typing import List
+
+class Solution:
+    def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
+
+        words = set(wordList)
+
+        if endWord not in words:
+            return []
+
+        # child -> list of parents
+        parents = defaultdict(list)
+
+        q = deque([beginWord])
+        visited = {beginWord}
+        found = False
+
+        # ---------------- BFS ----------------
+        while q and not found:
+
+            level_visited = set()
+
+            for _ in range(len(q)):
+                word = q.popleft()
+
+                for i in range(len(word)):
+                    for ch in "abcdefghijklmnopqrstuvwxyz":
+
+                        if ch == word[i]:
+                            continue
+
+                        nxt = word[:i] + ch + word[i+1:]
+
+                        if nxt not in words:
+                            continue
+
+                        # Ignore nodes from previous levels
+                        if nxt not in visited:
+
+                            # First time seen in this level
+                            if nxt not in level_visited:
+                                level_visited.add(nxt)
+                                q.append(nxt)
+
+                            # Store parent
+                            parents[nxt].append(word)
+
+                            if nxt == endWord:
+                                found = True
+
+            visited |= level_visited
+
+        # No path exists
+        if not found:
+            return []
+
+        # ---------------- DFS ----------------
+        ans = []
+        path = [endWord]
+
+        def dfs(word):
+
+            if word == beginWord:
+                ans.append(path[::-1])
+                return
+
+            for parent in parents[word]:
+                path.append(parent)
+                dfs(parent)
+                path.pop()
+
+        dfs(endWord)
+
+        return ans
