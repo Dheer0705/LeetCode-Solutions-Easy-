@@ -1,0 +1,23 @@
+class Solution:
+    def minCut(self, s: str) -> int:
+        memo = {}
+
+        def dfs(start):
+
+            if start == len(s):
+                return 0
+
+            if start in memo:
+                return memo[start]
+
+            best = float('inf')
+
+            for end in range(start + 1, len(s) + 1):
+
+                if s[start:end] == s[start:end][::-1]:
+                    best = min(best, 1 + dfs(end))
+
+            memo[start] = best
+            return best
+
+        return dfs(0) - 1
