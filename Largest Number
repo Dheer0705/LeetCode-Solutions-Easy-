@@ -1,0 +1,12 @@
+class Solution:
+    def largestNumber(self, nums: List[int]) -> str:
+        from functools import cmp_to_key
+        def custom_compare(a, b):
+    # Example: custom logic sorting numbers based on their string concatenation
+            if str(a) + str(b) > str(b) + str(a):
+                return -1  # 'a' should come before 'b'
+            else:
+                return 1   # 'b' should come before 'a'
+        largest_possible_number = sorted(nums, key=cmp_to_key(custom_compare))
+        result = ''.join(map(str,largest_possible_number))
+        return '0' if result[0] == '0' else result
